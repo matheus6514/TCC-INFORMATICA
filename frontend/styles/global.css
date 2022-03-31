@@ -1,7 +1,20 @@
-*{
+/*resetando os estilos padrões do navegador*/
+*,
+*::before,
+*::after{
   margin:0;
   padding:0;
   box-sizing:border-box;
+}
+
+/*Variáveis globais de cores do site*/
+:root{
+  --white: #fff;
+  --blue-900:#020e2f;
+  --blue-500:#122352;
+  --blue-100:#4863af;
+  --purple-999:#a018a5;
+  --purple-900:#9271d4;
 }
 
 html, body{

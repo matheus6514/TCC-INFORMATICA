@@ -4,11 +4,8 @@ section{
   align-items: center;
 
   height: 100%;
-  background: radial-gradient(crcle, #121024 0%, rgb(90, 54, 161) 0%, rgba(2,14,47,1) 100%);
-  background: linear-gradient(0deg, rgba(18,16,36,1) 0%, rgba(172,130,255,1) 0%, rgba(2,14,47,1) 100%);
-  background: rgb(18,16,36);
-  background: linear-gradient(0deg, rgba(18,16,36,1) 0%, rgb(146, 113, 212) 0%, rgb(100, 68, 175) 50%, rgb(9, 26, 73) 100%);
-
+  background: linear-gradient(0deg, rgba(18,16,36,1) 0%, var(--purple-900) 0%, var(--purple-900) 0%, var(--blue-900) 100%);
+  background-color: #464a66;
 }
 
 
@@ -19,10 +16,9 @@ section{
   align-items: center;
 
   height: 600px;
-
-  background-color: #020e2f;
-
-  border-radius: 25px;
+  
+  background-color: var(--blue-900);
+  border-radius: 20px;
 }
 
 
@@ -32,18 +28,15 @@ section{
   justify-content:center;
   align-items:center;
   flex-direction: column;
+  margin:0 50px;
 }
 
 .left-container h1{
-  margin:30px;
-}
-
-.left-container h1{
-  color: white;
+  color: var(--white);
 }
 
 .left-container img{
-  margin: 50px;
+  margin-top: 110px;
   height: 200px;
 }
 
@@ -56,14 +49,13 @@ section{
   flex-direction: column;
 
   margin:50px;
-  padding:50px;
-
+  padding: 40px 50px;
   border-radius: 25px;
-  background-color: #122352;
+  background-color: var(--blue-500);
 }
 
 .right-container h2{
-  color: #fff;
+  color: var(--white);
   margin-bottom:35px;
 }
 
@@ -73,26 +65,39 @@ section{
 }
 
 .right-container form label{
-  color: #fff;
+  color: var(--white);
 }
 
 .right-container form input{
-  background-color: #4863af;
+  background-color: var(--blue-100);
   border: none;
+  color: var(--white);
   margin: 10px 0;
   padding: 10px 10px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .right-container form input:focus{
-  background-color: #435da7;
+  background-color: var(--blue-100);
 }
 
 .right-container form button{
-  margin:5px;
+  margin:15px;
   padding: 10px 10px;
+
   border:none;
   border-radius: 15px;
-  background-color: #9271d4;
+
+  font-size:15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:900;
+  color: var(--white);
+
+  background-color: var(--purple-900);
+
+  transition: .4s ease;
 }
 
+.right-container form button:hover{
+  background-color: var(--purple-999);
+}
