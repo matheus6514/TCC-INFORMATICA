@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../../styles/global.css">
+  <link rel="stylesheet" href="./cadastro.css">
+
+  <link rel="shortcut icon" type="imagex/png" href="../../assets/controle-de-video-game.png">
+
+  <title>GAMP - Fórum de games</title>
+</head>
+
+<body>
+  <section>
+    <div class="container-botao-voltar">
+      <a class="botao" href="../index/index.html">VOLTAR</a>
+    </div>
+
+    <div class="container">
+
+      <h1>CADASTRO</h1>
+
+      <form action="">
+
+        <div class="photo">
+          <div class="preview-photo"><p>FOTO</p></div>
+
+          <input id="botao-padrao-formulario" type="file" hidden>
+          <button onclick = "ativarBotaoPadrao()" class="botao botao-formulario" id="botao-escolher-arquivo">Escolher arquivo</button>
+        </div>
+
+        <div class="input-section">
+              
+          <div class="right-container">
+
+              <label for="">Nome</label>
+              <input class="input" type="text" placeholder="Nome">
+
+            <label for="">Usuário</label>
+            <input class="input" type="text" placeholder="Usuário">
+
+            <label for="">data de nascimento</label>
+            <input class="input" type="date">
+          </div>
+
+          <div class="left-container">
+            <label for="">E-mail</label>
+            <input class="input" type="text" placeholder="E-mail">
+
+            <label for="">Senha</label>
+            <input type="password" placeholder="Senha">
+
+            <label for="">Confirmar senha</label>
+            <input type="password" placeholder="Confirmar Senha">
+          </div>
+
+        </div>
+        <a href="../index/index.html" class="botao botao-cadastrar">CADASTRAR</a>
+      </form>
+    </div>
+  </section>
+
+  <script src="../../js/ScrollEfect.js"></script>
+  <script>
+    const botaoPadraoFormulario = document.querySelector('#botao-padrao-formulario');
+    const botaoEscolherArquivo = document.querySelector('#botao-escolher-arquivo');
+
+    function ativarBotaoPadrao(){
+      botaoPadraoFormulario.click();
+    }
+  </script>   
+</body>
+</html>
